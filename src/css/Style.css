@@ -1,0 +1,81 @@
+.navbar{
+    -fx-background-color:  #2c2d2c;
+    -fx-text-fill: #ffffff
+}
+.navbar:hover{
+    -fx-text-fill: #fff200
+}
+
+
+#btComprar, #btVender{
+    -fx-background-color: #2c2d2c
+}
+
+#btComprar:hover, #btVender:hover{
+    -fx-background-color: #fff200;
+    -fx-text-fill: #2c2d2c;
+}
+
+#btEditar{
+    -fx-background-color: #ffec01;
+    -fx-text-fill: #2c2d2c;
+}
+#btEditar:hover{
+    -fx-background-color:#ffd901;
+}
+
+#btExcluir{
+    -fx-background-color: #fe1203;
+    -fx-text-fill: white;
+}
+
+#btExcluir:hover{
+    -fx-background-color: #ad1203;
+}
+
+#btAtualizar{
+    -fx-background-color: #2478fe;
+    -fx-text-fill: white;
+}
+
+#btAtualizar:hover{
+    -fx-background-color: #001ccc;
+}
+
+.table-view{
+   -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#131313 0%, #424141 100%);
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-family: "Segoe UI Black", Segoe, Sans-serif; 
+    
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+
+.table-view .table-cell{
+    -fx-text-fill: black;
+    -fx-font-size: 16px;
+    -fx-font-family: "Segoe UI", Segoe, Sans-serif; 
+    -fx-text-align: center
+}
+
+.table-row-cell:selected {
+    -fx-background-color: yellow;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}

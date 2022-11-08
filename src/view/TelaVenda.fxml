@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600" prefWidth="1200" style="-fx-background-color: #646464;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.TelaVendaController">
+   <children>
+      <TableView fx:id="tableMotos" layoutX="170.0" layoutY="232.0" prefHeight="271.0" prefWidth="850.0">
+         <columns>
+            <TableColumn fx:id="colunaId" prefWidth="54.999969482421875" text="ID" />
+            <TableColumn fx:id="colunaModelo" prefWidth="118.0" text="Modelo" />
+            <TableColumn fx:id="colunaMarca" prefWidth="142.0" text="Marca" />
+            <TableColumn fx:id="colunaCor" prefWidth="111.0" text="Cor" />
+            <TableColumn fx:id="colunaCilindradas" prefWidth="103.0" text="Cilindradas" />
+            <TableColumn fx:id="colunaQuilometragem" prefWidth="128.0" text="Quilometragem" />
+            <TableColumn fx:id="colunaPlaca" prefWidth="120.0" text="Placa" />
+            <TableColumn fx:id="colunaAno" prefWidth="72.0" text="Ano" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtNome_comprador" layoutX="171.0" layoutY="168.0" prefHeight="37.0" prefWidth="349.0" promptText="Nome">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtData_venda" layoutX="670.0" layoutY="172.0" prefHeight="37.0" prefWidth="160.0" promptText="Data">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtValor_venda" layoutX="860.0" layoutY="172.0" prefHeight="37.0" prefWidth="160.0" promptText="Valor">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="171.0" layoutY="139.0" text="Nome do comprador" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Black" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="861.0" layoutY="139.0" text="Valor (R$)" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Black" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="670.0" layoutY="139.0" text="Data" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Black" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="126.0" fitWidth="122.0" layoutX="539.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/dolar.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btVender" layoutX="859.0" layoutY="531.0" mnemonicParsing="false" onAction="#vender" prefHeight="44.0" prefWidth="160.0" stylesheets="@../css/Style.css" text="Vender" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Black" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="868.0" layoutY="541.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/lucros.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="986.0" layoutY="541.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/lucros.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
