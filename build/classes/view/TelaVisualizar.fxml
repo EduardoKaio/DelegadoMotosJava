@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600" prefWidth="1200" style="-fx-background-color: #646464;" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.TelaVisualizarController">
+   <children>
+      <TableView fx:id="tableMotos" layoutX="174.0" layoutY="194.0" prefHeight="322.0" prefWidth="852.0" stylesheets="@../css/Style.css">
+         <columns>
+            <TableColumn fx:id="colunaId" prefWidth="42.0" text="ID" />
+            <TableColumn fx:id="colunaModelo" prefWidth="120.0" text="Modelo" />
+            <TableColumn fx:id="colunaMarca" prefWidth="98.0" text="Marca" />
+            <TableColumn fx:id="colunaCor" prefWidth="109.0" text="Cor" />
+            <TableColumn fx:id="colunaCilindradas" minWidth="0.0" prefWidth="108.0" text="Cilindradas" />
+            <TableColumn fx:id="colunaQuilometragem" prefWidth="160.0" text="Quilometragem" />
+            <TableColumn fx:id="colunaPlaca" minWidth="0.0" prefWidth="131.0" text="Placa" />
+            <TableColumn fx:id="colunaAno" prefWidth="84.0" text="Ano" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="130.0" fitWidth="118.0" layoutX="562.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/pesquisar-arquivo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btEditar" layoutX="174.0" layoutY="135.0" mnemonicParsing="false" onAction="#AbrirModal" prefHeight="44.0" prefWidth="157.0" text="Editar" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Black" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btExcluir" layoutX="869.0" layoutY="135.0" mnemonicParsing="false" onAction="#remover" prefHeight="44.0" prefWidth="157.0" text="Excluir" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Black" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btAtualizar" layoutX="869.0" layoutY="529.0" mnemonicParsing="false" onAction="#carregarDadosTabela" prefHeight="44.0" prefWidth="157.0" stylesheets="@../css/Style.css" text="Atualizar">
+         <font>
+            <Font name="Segoe UI Black" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

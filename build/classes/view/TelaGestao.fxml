@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600" prefWidth="1200" style="-fx-background-color: #646464;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.TelaGestaoController">
+   <children>
+      <Label layoutX="233.0" layoutY="188.0" prefHeight="25.0" prefWidth="140.0" text="Receita (R$)" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Black" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="354.0" text="Despesas (R$)" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Black" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="732.0" layoutY="187.0" text="Lucro (R$)" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Black" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtReceita" layoutX="231.0" layoutY="229.0" prefHeight="53.0" prefWidth="248.0" promptText="Receita">
+         <font>
+            <Font size="22.0" />
+         </font></TextField>
+      <TextField fx:id="txtLucro" layoutX="729.0" layoutY="228.0" prefHeight="53.0" prefWidth="248.0" promptText="Lucro">
+         <font>
+            <Font size="22.0" />
+         </font></TextField>
+      <TextField fx:id="txtDespesas" layoutX="231.0" layoutY="393.0" prefHeight="60.0" prefWidth="248.0" promptText="Despesas">
+         <font>
+            <Font size="22.0" />
+         </font></TextField>
+      <ImageView fitHeight="144.0" fitWidth="153.0" layoutX="530.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/a-pagar.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="1200.0" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.TelaPrincipalController">
+   <children>
+      <AnchorPane prefHeight="121.0" prefWidth="1200.0" style="-fx-background-color: #2c2d2c;" stylesheets="@../css/Style.css">
+         <children>
+            <HBox layoutX="14.0" layoutY="11.0" prefHeight="144.0" prefWidth="1171.0">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="277.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Logo_Site-removebg-preview.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="btIncio" minHeight="100.0" mnemonicParsing="false" onAction="#TelaInicio" styleClass="navbar" stylesheets="@../css/NavBar.css" text="Início" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Black" size="28.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="40.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btCompra" minHeight="100.0" mnemonicParsing="false" onAction="#TelaCompra" styleClass="navbar" stylesheets="@../css/NavBar.css" text="Compra" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Black" size="28.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btVenda" minHeight="100.0" mnemonicParsing="false" onAction="#TelaVenda" styleClass="navbar" stylesheets="@../css/NavBar.css" text="Venda" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Black" size="28.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btVisualizar" minHeight="100.0" mnemonicParsing="false" onAction="#TelaVisualizar" styleClass="navbar" stylesheets="@../css/NavBar.css" text="Visualizar" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Black" size="28.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btGestao" minHeight="100.0" mnemonicParsing="false" onAction="#TelaGestao" styleClass="navbar" stylesheets="@../css/NavBar.css" text="Gestão" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Black" size="28.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="PainelPrincipal" layoutY="153.0" prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: #646464;">
+         <children>
+            <StackPane fx:id="pilhaPainel" minHeight="479.0" minWidth="899.0" prefHeight="600.0" prefWidth="1200.0">
+               <children>
+                  <AnchorPane prefHeight="398.0" prefWidth="871.0">
+                     <children>
+                        <AnchorPane layoutX="663.0" layoutY="91.0" prefHeight="415.0" prefWidth="461.0" style="-fx-background-color: #fffe79;">
+                           <children>
+                              <Label layoutX="25.0" layoutY="-3.0" prefHeight="108.0" prefWidth="405.0" text="&quot;Impossível não comprar no Delegado Motos!&quot;" textAlignment="CENTER" textFill="#434343" wrapText="true">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="134.0" text="Vende" textFill="#434343">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="38.0" layoutY="199.0" text="Compra" textFill="#434343">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="41.0" layoutY="261.0" text="Troca" textFill="#434343">
+                                 <font>
+                                    <Font name="Segoe UI Black" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="13.0" layoutY="104.0" prefHeight="43.0" prefWidth="21.0" text="." textFill="#434343">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="60.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="13.0" layoutY="167.0" prefHeight="43.0" prefWidth="21.0" text="." textFill="#434343">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="60.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="13.0" layoutY="231.0" prefHeight="43.0" prefWidth="21.0" text="." textFill="#434343">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="60.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="311.0" fitWidth="269.0" layoutX="164.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/WhatsApp_Image_2022-03-22_at_19.08.59-removebg-preview.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <ImageView fitHeight="417.0" fitWidth="486.0" layoutX="82.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/foto.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="435.0" layoutY="19.0" text="Delegado Motos" textFill="#fff200">
+                           <font>
+                              <Font name="Rockwell Bold" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="700.0" layoutY="542.0" text="Av. Independência, 106 - Centro" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Black" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="391.0" layoutY="542.0" text="\@delegadomotos" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Black" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="125.0" layoutY="528.0" text="(84) 99648-9327" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Black" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="125.0" layoutY="551.0" text="(84) 99865-4469" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Black" size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="43.0" fitWidth="50.0" layoutX="78.0" layoutY="532.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/telefones.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="340.0" layoutY="535.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/instagram.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="58.0" fitWidth="63.0" layoutX="772.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/motorbike.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="58.0" fitWidth="63.0" layoutX="355.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/motorbike.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children></StackPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
